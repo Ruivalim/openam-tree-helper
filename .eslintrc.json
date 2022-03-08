@@ -22,7 +22,9 @@
         "prettier"
     ],
     "rules": {
-        "no-await-in-loop": "off",
+        "no-template-curly-in-string": "off",
+        "no-bitwise": "off",
+        "@typescript-eslint/no-shadow": "off",
         "no-constant-condition": "off",
         "import/prefer-default-export": "off",
         "no-restricted-syntax": "off",
@@ -30,7 +32,16 @@
         "no-param-reassign": "off",
         "no-new": "off",
         "no-console": "off",
+        "no-continue": "off",
+        "camelcase": "off",
         "prettier/prettier": "error",
+        "new-cap": "off",
+        "no-await-in-loop": "off",
+        "no-plusplus": "off",
+        "no-shadow": "off",
+        "@typescript-eslint/explicit-module-boundary-types": "off",
+        "@typescript-eslint/no-explicit-any": "off",
+        "consistent-return": "off",
         "import/extensions": [
             "error",
             "ignorePackages",

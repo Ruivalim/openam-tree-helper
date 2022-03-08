@@ -1,27 +1,56 @@
 {
-	"compilerOptions": {
-		"target": "es6",
-		"module": "commonjs",
-		"moduleResolution": "node",
-		"allowSyntheticDefaultImports": true,
-		"allowJs": true,
-		"importHelpers": true,
-		"alwaysStrict": true,
-		"sourceMap": true,
-		"forceConsistentCasingInFileNames": true,
-		"noFallthroughCasesInSwitch": true,
-		"noImplicitReturns": true,
-		"noUnusedLocals": true,
-		"noUnusedParameters": true,
-		"noImplicitAny": false,
-		"noImplicitThis": false,
-		"strictNullChecks": false,
-		"declaration": true,
-		"rootDir": "src",
-		"outDir": "dist",
-		"removeComments": true
-	},
-	"include": [
-		"src/**/*"
-	]
+    "ts-node": {
+        "files": true,
+        "typeRoots": [
+            "./node_modules/@types",
+            "./types"
+        ]
+    },
+    "compilerOptions": {
+        "target": "ES2018",
+        "module": "commonjs",
+        "lib": [
+            "es2020",
+            "dom"
+        ],
+        "declaration": true,
+        "strict": true,
+        "noImplicitAny": true,
+        "strictNullChecks": true,
+        "noImplicitThis": true,
+        "alwaysStrict": true,
+        "noUnusedLocals": false,
+        "noUnusedParameters": false,
+        "noImplicitReturns": true,
+        "noFallthroughCasesInSwitch": false,
+        "inlineSourceMap": true,
+        "inlineSources": true,
+        "experimentalDecorators": true,
+        "strictPropertyInitialization": false,
+        "typeRoots": [
+            "./node_modules/@types",
+            "./types"
+        ],
+        "esModuleInterop": true,
+        "allowJs": true,
+        "checkJs": false,
+        "skipLibCheck": true,
+        "resolveJsonModule": true,
+        "baseUrl": ".",
+        "outDir": "dist",
+        "paths": {
+            "@constants": [
+                "./common/constants"
+            ],
+            "@functions/*": [
+                "./functions/*"
+            ],
+            "@common/*": [
+                "./common/*"
+            ]
+        }
+    },
+    "exclude": [
+        "./node_modules/*"
+    ]
 }

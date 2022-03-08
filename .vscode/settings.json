@@ -1,11 +1,13 @@
 {
     "cSpell.words": [
-        "vinrouter",
-        "adas",
-        "postrunner"
+        "Openam",
     ],
     "editor.codeActionsOnSave": {
         "source.fixAll.eslint": true
     },
-    "eslint.workingDirectories": [{ "mode": "auto" }]
+    "eslint.workingDirectories": [
+        {
+            "mode": "auto"
+        }
+    ]
 }
